@@ -5,25 +5,21 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <div className="topbar container">
-        <div className="navigation">
-          <button>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">home</Link>
-              </li>
-              <li>
-                <Link to="/work">work</Link>
-              </li>
-              <li>
-                <Link to="/about">about</Link>
-              </li>
-            </ul>
+      <div className="header__fixed">
+        <div className="header__container">
+          <div className="header__logo">
+            <Link to="/">jana malecka</Link>
+          </div>
+          <div className="header__hamburger">
+            <button className="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav className="header__navigation">
+            <Link to="/work">work</Link>
+            <Link to="/about">about</Link>
           </nav>
         </div>
       </div>
