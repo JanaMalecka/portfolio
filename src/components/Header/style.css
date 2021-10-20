@@ -16,14 +16,83 @@
 nav a {
   text-decoration: none;
   padding: 0 1rem;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover {
+  border-bottom: 2px solid turquoise;
 }
 
 .header__logo a {
   text-decoration: none;
 }
+.hamburger {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% / 2);
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+}
+.hamburger:hover {
+  box-shadow: none;
+}
+.hamburger span {
+  position: absolute;
+  top: calc(50% / 2);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: turquoise;
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
+  border-radius: 8px;
+}
+
+.hamburger span:nth-child(1) {
+  width: 40px;
+  transform: translateY(-250%);
+}
+.hamburger span:nth-child(2) {
+  width: 40px;
+}
+
+.hamburger span:nth-child(3) {
+  transform: translateY(250%);
+}
+
+.hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--open span:nth-child(1) {
+  transform: rotate(45deg);
+  width: 40px;
+}
+
+.hamburger--open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.navigation__link {
+  font-size: 1rem;
+}
+.header__navigation--open {
+  display: none;
+}
 
 @media screen and (min-width: 640px) {
   .header__navigation {
     flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header__navigation--open {
+    display: flex;
+    padding-top: 0rem;
+    align-content: baseline;
   }
 }
