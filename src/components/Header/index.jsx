@@ -14,10 +14,10 @@ const Header = () => {
   return (
     <header>
       <div className="header__fixed">
+        <div className="header__logo">
+          <Link to="/">jana malecka</Link>
+        </div>
         <div className="header__container">
-          <div className="header__logo">
-            <Link to="/">jana malecka</Link>
-          </div>
           <div className="header__hamburger">
             <button
               onClick={() =>
