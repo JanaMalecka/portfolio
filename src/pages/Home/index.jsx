@@ -5,7 +5,9 @@ import './style.css';
 const Home = () => {
   return (
     <>
-      <h2>Jana Malecká</h2>
+      <div className="container">
+        <h2>Jana Malecká</h2>
+      </div>
     </>
   );
 };

@@ -106,7 +106,7 @@ nav a:hover {
     flex-direction: row;
   }
   .header__fixed {
-    max-width: 80%;
+    max-width: 90%;
   }
   .header__logo {
     margin-top: auto;

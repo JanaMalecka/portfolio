@@ -2,7 +2,13 @@ import React from 'react';
 import './style.css';
 
 const About = () => {
-  return <h2>About</h2>;
+  return (
+    <>
+      <div className="container">
+        <h2>About</h2>
+      </div>
+    </>
+  );
 };
 
 export default About;
