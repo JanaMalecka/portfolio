@@ -5,7 +5,11 @@ const Work = () => {
   return (
     <>
       <div className="container">
-        <h2>Work</h2>
+        <h3>
+          Final project for Czechitas Web Academy / a favour for my friends
+        </h3>
+        <p className="code">Code</p>
+        <img></img>
       </div>
     </>
   );
