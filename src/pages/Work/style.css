@@ -16,3 +16,34 @@ a {
 .project-info a:hover {
   color: turquoise;
 }
+.img-hradejov {
+  width: auto;
+  height: 15rem;
+  display: flex;
+  margin: auto;
+  border: 3px turquoise solid;
+}
+.container__project {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 425px) {
+  .img-hradejov {
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .img-hradejov {
+    height: 25rem;
+  }
+  .container__project {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .img-hradejov {
+    height: 30rem;
+  }
+  .container__project {
+    margin-bottom: 6rem;
+  }
+}
