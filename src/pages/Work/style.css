@@ -1,0 +1,18 @@
+.project-info {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 800;
+}
+a {
+  text-decoration: none;
+}
+
+.project-info a:link {
+  color: #333;
+}
+.project-info a:visited {
+  color: #333;
+}
+.project-info a:hover {
+  color: turquoise;
+}
